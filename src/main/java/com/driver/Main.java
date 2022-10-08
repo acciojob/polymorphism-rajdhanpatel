@@ -3,19 +3,20 @@ package com.driver;
 public class Main {
     public static void main(String[] args){
         Product p = new Product();
-        p.product(10,20);
-        p.product(10,20,30);
-        p.product(2.5,3.5);
+        int a = p.product(10,20);
+        int b = p.product(10,20,30);
+        double c = p.product(2.5,3.5);
+        System.out.println(a+" "+b+" "+c);
     }
     public static class Product{
         public int product(int x, int y) {
-            return 0;
+            return x*y;
         }
         public int product(int x, int y, int z) {
-            return 0;
+            return x*y*z;
         }
         public double product(double x, double y) {
-            return 0;
+            return x*y;
         }
     }
 
